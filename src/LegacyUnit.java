@@ -16,7 +16,7 @@ public class LegacyUnit {
 		this.vy = r.nextFloat() * MAX_V;
 	}
 
-	public void move() {
+	public void walk() {
 		x += vx;
 		y += vy;
 		if (x <= 0 || x >= Game.SIZE) {
@@ -27,11 +27,11 @@ public class LegacyUnit {
 		}
 	}
 
-	public int getX() {
+	public int getPositionX() {
 		return (int) x;
 	}
 
-	public int getY() {
+	public int getPositionY() {
 		return (int) y;
 	}
 
